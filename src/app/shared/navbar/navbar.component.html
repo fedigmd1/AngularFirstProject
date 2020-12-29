@@ -1,117 +1,62 @@
 <header>
-  <div class="view jarallax"
-    style="background-image: url('../../../assets/img/netflix_background.jpeg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
-    <nav>
-      <a class="navbar-brand" href="https://www.netflix.com/">
-        <img src="../../../assets/img/Netflix-Logo.png" height="50px" class="align-top text-left"
-          style="margin-left: 50px; margin-top: 20px;">
+  <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top trancparent z-depth-0"
+    [containerInside]="false">
+    <mdb-navbar-brand>
+      <a class="navbar-brand" href="#">
+        <img src="../../../assets/img/Netflix-Logo.png" height="52px" style="margin-left: 41px; margin-bottom: 50px;">
       </a>
-    </nav>
-    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-      <section class="team-section ">
+    </mdb-navbar-brand>
+    <links>
+      <ul class="navbar-nav mr-auto" style="margin-left: 30px; margin-bottom: 50px;">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about" data-offset="80">TvShows</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#features" data-offset="80">Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services" data-offset="80">Latest</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#opinions" data-offset="30">My List</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav nav-flex-icons" style="margin-right: 65px;  margin-bottom: 35px;">
+        <li class="nav-item">
+          <a class="nav-link">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+            <i class="fas fa-gift"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+            <i class="fas fa-bell"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a>
+            <img class="rounded-circle z-depth-2 img-fluid" src="../../../assets/img/img1.jpeg"
+              style="height: 40px; margin-bottom: 10px; margin-left: 10px;">
+            <i class="fas fa-caret-down" style="color:aliceblue; margin-left: 5px;"></i>
+          </a>
+        </li>
+      </ul>
+    </links>
+  </mdb-navbar>
 
-        <div
-          style="padding-bottom: 30px; color:whitesmoke;border-style: solid; margin-left: auto; margin-right: auto; width: 300px; height: 80px;">
-          <h2 class="h1-responsive font-weight-bold my-5 text-center" style="height: 40px; width: auto;">
-            <mdb-badge color="black">
-              Who's watching?
-            </mdb-badge>
-          </h2>
-        </div>
-        <p class="dark-grey-text w-responsive mx-auto mb-5">
-        <div class="row">
-          <div class="col-md-1" style="margin-left: auto; margin-right: 15px;" href="/Fedi">
-            <div class="avatar mx-auto">
-              <img src="../../../assets/img/img1.jpeg" class="rounded-circle z-depth-2 img-fluid">
-              <h4 class="font-weight-bold dark-grey-text mt-4 text-center align-items-center justify-content-center">
-                Fedi Gammoudi</h4>
-            </div>
-          </div>
-          <div class="col-md-1" style="margin-right: 15px;">
-            <div class="avatar mx-auto">
-              <img src="https://mdbootstrap.com/img/Photos/Avatars/img(2).jpg"
-                class="rounded-circle z-depth-1 img-fluid">
-              <h4 class="font-weight-bold dark-grey-text mt-4 text-center">Anna Deynah</h4>
-            </div>
-          </div>
-          <div class="col-md-1" style="margin-right: 15px;">
-            <div class="avatar mx-auto">
-              <img src="https://mdbootstrap.com/img/Photos/Avatars/img(3).jpg"
-                class="rounded-circle z-depth-1 img-fluid">
-
-              <h4 class="font-weight-bold dark-grey-text mt-4 text-center">Mohsen Sessi</h4>
-            </div>
-          </div>
-          <div class="col-md-1" style="margin-right: 15px;">
-            <div class="testimonial">
-              <div class="avatar mx-auto">
-                <img src="https://mdbootstrap.com/img/Photos/Avatars/img(4).jpg"
-                  class="rounded-circle z-depth-1 img-fluid">
-              </div>
-              <h4 class="font-weight-bold dark-grey-text mt-4 text-center">Meriem Rebhi</h4>
-            </div>
-          </div>
-          <div class="col-md-1" style="margin-right: 15px;">
-            <div class="testimonial">
-              <div class="avatar mx-auto">
-                <img src="https://mdbootstrap.com/img/Photos/Avatars/img(9).jpg"
-                  class="rounded-circle z-depth-1 img-fluid">
-              </div>
-              <h4 class="font-weight-bold dark-grey-text mt-4 text-center">Mansour Djej</h4>
-            </div>
-          </div>
-          <div class="col-md-1" style="margin-right: auto; ">
-            <div class="testimonial">
-              <div class="avatar mx-auto">
-                <img src="https://mdbootstrap.com/img/Photos/Avatars/img(5).jpg"
-                  class="rounded-circle z-depth-1 img-fluid">
-              </div>
-              <h4 class="font-weight-bold dark-grey-text mt-4 text-center">City Market</h4>
-            </div>
-          </div>
-        </div>
-        <div
-          style=" border-style: solid; margin-left: auto; margin-right: auto; margin-top: 40px; width: 300px; height: 80px;">
-          
-          <button class="manage_profiles" style="width: 300px; height: 80px;">Manage Profiles</button>
-        </div>
-      </section>
+  <div id="intro-section" class="view">
+    <video class="video-intro" poster="../../../assets/img/netflix_background.jpeg">
+      <!-- <source src="https://www.youtube.com/watch?v=RVmG_d3HKBA&ab_channel=MIKAVEVO" type="video/mp4"> -->
+    </video>
+    <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
     </div>
   </div>
-
-
 </header>
-
-
-
-
-
-
-
-<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-  <mdb-navbar-brand>
-    <a class="logo navbar-brand waves-light" mdbWavesEffect href="#"><strong>MDB</strong></a>
-  </mdb-navbar-brand>
-  <links>
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active waves-light" mdbWavesEffect>
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item waves-light" mdbWavesEffect>
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item waves-light" mdbWavesEffect>
-        <a class="nav-link" href="#">Profile</a>
-      </li>
-    </ul>
-    <form class="form-inline">
-      <div class="md-form my-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-      </div>
-    </form>
-  </links>
-</mdb-navbar>
-
-
-
-

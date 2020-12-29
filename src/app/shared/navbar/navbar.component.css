@@ -3,55 +3,45 @@
 html,
 body,
 header,
+#intro-section,
 .view {
-  min-height: 100vh !important;
+    height: 100vh !important;
 }
 
 @media (max-width: 740px) {
-  html,
-  body,
-  header,
-  .view {
-    height: 100vh;
-  }
+    html,
+    body,
+    header,
+    #intro-section {
+        min-height: 100vh;
+    }
 }
 
 .top-nav-collapse {
-  background-color: #78909c !important;
+    background-color: #563e91 !important;
 }
 
 .navbar:not(.top-nav-collapse) {
-  background: transparent !important;
+    background: transparent !important;
 }
 
 @media (max-width: 991px) {
-  .navbar:not(.top-nav-collapse) {
-    background: #78909c !important;
-  }
+    .navbar:not(.top-nav-collapse) {
+        background: #563e91 !important;
+    }
 }
 
-h1 {
-  letter-spacing: 8px;
+.rgba-gradient {
+    background: -moz-linear-gradient(45deg, rgba(213, 15, 61, 0.6), rgba(13, 17, 198, 0.69) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(213, 15, 61, 0.6), rgba(13, 17, 198, 0.69) 100%);
+    background: linear-gradient(45deg, rgba(213, 15, 61, 0.6), rgba(13, 17, 198, 0.69) 100%);
 }
 
-h5 {
-  letter-spacing: 3px;
+.view.mask {
+    overflow: auto !important;
 }
 
-.hr-light {
-  border-top: 3px solid #fff;
-  width: 80px;
-}
-
-.team_sectionn{
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-
-.manage_profiles{
-  background-image: linear-gradient(to bottom right, #1F1C18,  #8E0E00);
-  text-align: center;
-  justify-content: center;
-  
+.avatar {
+    height: 40px;
+    margin-bottom: 10px;
 }
