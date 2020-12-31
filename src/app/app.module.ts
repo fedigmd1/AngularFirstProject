@@ -26,7 +26,6 @@ import { HttpClientModule } from '@angular/common/http'
     HomePageModule,
     FlexLayoutModule,
     HttpClientModule,
-
   ],
   providers: [MovieService],
 
