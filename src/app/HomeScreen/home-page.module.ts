@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CarouselComponent } from './carousel/carousel.component';
 
-import { BrowserModule } from '@angular/platform-browser';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AlertModule } from 'ngx-bootstrap/alert';
 import { MoviecardsComponent } from './moviecards/moviecards.component';
@@ -22,10 +21,9 @@ import { HttpClientModule } from '@angular/common/http'
   ],
   imports: [
     CommonModule,
-    MDBBootstrapModule,
     AlertModule,
-    BrowserModule,
     BrowserAnimationsModule,
+    MDBBootstrapModule.forRoot(),
     MatCardModule,
     MatToolbarModule,
     MatButtonModule,
