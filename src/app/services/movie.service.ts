@@ -11,7 +11,8 @@ import { Movie } from '../models/movie';
 export class MovieService {
   private uri: string = environment.api
   private key: string = environment.key
-  private url: string = this.uri + "/movie/popular?api_key=" + this.key + "&language=fr&page=2";
+  // private url: string = this.uri + "/movie/popular?api_key=" + this.key + "&language=fr&page=2";
+  private url: string = "http://localhost:8081/api/movie/popular";
 
   constructor(private http: HttpClient) {
   }

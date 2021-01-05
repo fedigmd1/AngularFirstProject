@@ -18,7 +18,7 @@ export class MoviecardsComponent implements OnInit {
   
   ngOnInit(): void {
     this._moviesService.getPopularMovie().subscribe(data => {
-      this.movies = data.results;
+      this.movies = data.body.results;
     });
   }
 }
